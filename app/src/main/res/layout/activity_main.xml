@@ -7,15 +7,30 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.erick_king.first_library.MainActivity">
+    tools:context="com.example.erick_king.first_library.MainActivity"
+    android:background="#020202">
+
+
+    <ImageView
+        android:layout_width="?android:actionBarSize"
+        android:layout_height="?android:actionBarSize"
+        android:src="@android:drawable/ic_menu_edit"
+        android:padding="10dp"
+        android:background="@android:color/holo_blue_dark"
+        android:layout_alignParentTop="true"
+        android:id="@+id/imageView" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New Button"
+        android:text="It works"
         android:id="@+id/button"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_toEndOf="@+id/more"
+        android:background="#bb0909"
+        android:width="200dp"
+        android:textColor="#6cfd05"
+        android:textSize="18dp" />
 
     <com.andexert.library.RippleView
         android:id="@+id/more"
@@ -25,16 +40,14 @@
         android:layout_margin="5dp"
         rv_centered="true">
 
+        <ImageView
+            android:layout_width="?android:actionBarSize"
+            android:layout_height="?android:actionBarSize"
+            android:src="@android:drawable/ic_menu_edit"
+            android:layout_centerInParent="true"
+            android:padding="10dp"
+            android:background="@android:color/holo_blue_dark"
+            android:id="@+id/more2" />
+
     </com.andexert.library.RippleView>
-
-    <ImageView
-        android:layout_width="?android:actionBarSize"
-        android:layout_height="?android:actionBarSize"
-        android:src="@android:drawable/ic_menu_edit"
-        android:padding="10dp"
-        android:background="@android:color/holo_blue_dark"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/button"
-        android:id="@+id/imageView" />
-
 </RelativeLayout>
